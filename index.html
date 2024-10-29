@@ -182,7 +182,7 @@
             const randomSurah = surahs[randomSurahIndex];
             const randomAyahIndex = Math.floor(Math.random() * randomSurah.ayah_count) + 1;
 
-            fetch(`https://api.alquran.cloud/v1/ayah/${randomSurahIndex + 1}:${randomAyahIndex}/en.asad`)
+            fetch(`https://api.alquran.cloud/v1/ayah/${randomSurahIndex + 1}:${randomAyahIndex}/en.asad`) //for bangla - bn.bengali
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
